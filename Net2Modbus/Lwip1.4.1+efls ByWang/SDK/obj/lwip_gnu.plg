@@ -1,0 +1,1786 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\lwip_gnu.uvproj
+Project File Date:  05/24/2018
+
+<h2>Output:</h2>
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling stm32f10x_it.c...
+..\myself\src\stm32f10x_it.c(62): error:  #1113: Inline assembler not permitted when generating Thumb code
+..\myself\src\stm32f10x_it.c:    __asm  BX lr ;
+..\myself\src\stm32f10x_it.c:    ^
+..\myself\src\stm32f10x_it.c: ..\myself\src\stm32f10x_it.c: 0 warnings, 1 error
+Target not created
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+_____^
+*** error 56: cant open file
+Build target 'iap_lwip2modbus'
+compiling stm32f10x_it.c...
+..\myself\src\stm32f10x_it.c(154): warning:  #1295-D: Deprecated declaration Read_Eth_Packet - give arg types
+..\myself\src\stm32f10x_it.c:     extern void Read_Eth_Packet(); //读取数据包大BUFF中
+..\myself\src\stm32f10x_it.c:                 ^
+..\myself\src\stm32f10x_it.c: ..\myself\src\stm32f10x_it.c: 1 warning, 0 errors
+linking...
+Program Size: Code=58704 RO-data=756 RW-data=524 ZI-data=51148  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(62): error:  #137: expression must be a modifiable lvalue
+..\myself\src\client_tcpudp.c:                                      data = p->payload;  
+..\myself\src\client_tcpudp.c:                                      ^
+..\myself\src\client_tcpudp.c(69): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                  if (strncmp(data, "getid", 5) == 0)
+..\myself\src\client_tcpudp.c:                                              ^
+..\myself\src\client_tcpudp.c(99): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                    else if (strncmp(data, "getrun", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(125): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                   else if (strncmp(data, "getiap", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(148): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                   else if (strncmp(data, "setiap", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(165): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                    else if (strncmp(data, "setapp", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(181): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                   else if (strncmp(data, "getconfig", 9) == 0)
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(211): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                  else if ((strncmp(data, "setconfig", 9) == 0)&&
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(212): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                      ((strncmp(&data[17], ":",1) == 0)))
+..\myself\src\client_tcpudp.c:                                                                ^
+..\myself\src\client_tcpudp.c(215): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[0]=data[10];//取出最高IP位
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(216): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[1]=data[12];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(217): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[2]=data[14];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(218): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[3]=data[16];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(220): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint16_t"
+..\myself\src\client_tcpudp.c:                                                                  port_sever     =data[18];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(222): error:  #32: expression must have arithmetic type
+..\myself\src\client_tcpudp.c:                                                                  port_sever     +=data[19];
+..\myself\src\client_tcpudp.c:                                                                                   ^
+..\myself\src\client_tcpudp.c(264): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                     if (strncmp(data, "getver", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                 ^
+..\myself\src\client_tcpudp.c(294): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                     if (strncmp(data, "reboot", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                 ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(418): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(437): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(533): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(534): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(535): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(911): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 13 warnings, 17 errors
+Target not created
+Build target 'iap_lwip2modbus'
+compiling netconf.c...
+..\myself\src\netconf.c(187): warning:  #223-D: function "tcp_tmr" declared implicitly
+..\myself\src\netconf.c:       tcp_tmr();
+..\myself\src\netconf.c:       ^
+..\myself\src\netconf.c(52): warning:  #177-D: variable "IPaddress" was declared but never referenced
+..\myself\src\netconf.c:   static uint32_t IPaddress = 0;
+..\myself\src\netconf.c:                   ^
+..\myself\src\netconf.c: ..\myself\src\netconf.c: 2 warnings, 0 errors
+Project build/rebuild aborted.
+Target not created
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(62): error:  #137: expression must be a modifiable lvalue
+..\myself\src\client_tcpudp.c:                                      data = p->payload;  
+..\myself\src\client_tcpudp.c:                                      ^
+..\myself\src\client_tcpudp.c(69): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                  if (strncmp(data, "getid", 5) == 0)
+..\myself\src\client_tcpudp.c:                                              ^
+..\myself\src\client_tcpudp.c(99): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                    else if (strncmp(data, "getrun", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(125): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                   else if (strncmp(data, "getiap", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(148): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                   else if (strncmp(data, "setiap", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(165): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                    else if (strncmp(data, "setapp", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(181): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                   else if (strncmp(data, "getconfig", 9) == 0)
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(211): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                  else if ((strncmp(data, "setconfig", 9) == 0)&&
+..\myself\src\client_tcpudp.c:                                                                    ^
+..\myself\src\client_tcpudp.c(212): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                      ((strncmp(&data[17], ":",1) == 0)))
+..\myself\src\client_tcpudp.c:                                                                ^
+..\myself\src\client_tcpudp.c(215): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[0]=data[10];//取出最高IP位
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(216): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[1]=data[12];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(217): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[2]=data[14];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(218): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint8_t"
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[3]=data[16];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(220): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint16_t"
+..\myself\src\client_tcpudp.c:                                                                  port_sever     =data[18];
+..\myself\src\client_tcpudp.c:                                                                                 ^
+..\myself\src\client_tcpudp.c(222): error:  #32: expression must have arithmetic type
+..\myself\src\client_tcpudp.c:                                                                  port_sever     +=data[19];
+..\myself\src\client_tcpudp.c:                                                                                   ^
+..\myself\src\client_tcpudp.c(264): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                     if (strncmp(data, "getver", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                 ^
+..\myself\src\client_tcpudp.c(294): error:  #167: argument of type "char **" is incompatible with parameter of type "const char *"
+..\myself\src\client_tcpudp.c:                                                     if (strncmp(data, "reboot", 6) == 0)
+..\myself\src\client_tcpudp.c:                                                                 ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(418): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(437): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(533): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(534): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(535): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(911): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 13 warnings, 17 errors
+Target not created
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(62): error:  #137: expression must be a modifiable lvalue
+..\myself\src\client_tcpudp.c:                                      data = p->payload;  
+..\myself\src\client_tcpudp.c:                                      ^
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(418): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(437): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(533): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(534): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(535): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(911): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 13 warnings, 1 error
+Target not created
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(418): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(437): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(533): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(534): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(535): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(911): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=58724 RO-data=756 RW-data=524 ZI-data=51148  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 13 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+linking...
+Program Size: Code=58724 RO-data=756 RW-data=524 ZI-data=51148  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(413): error:  #42: operand types are incompatible ("void *" and "int")
+..\myself\src\client_tcpudp.c:                   if(p->payload<=1500)
+..\myself\src\client_tcpudp.c:                                ^
+..\myself\src\client_tcpudp.c(424): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(443): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(539): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(540): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(915): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 13 warnings, 1 error
+Target not created
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(413): error:  #42: operand types are incompatible ("void *" and "int")
+..\myself\src\client_tcpudp.c:                   if(p->payload<=1500)
+..\myself\src\client_tcpudp.c:                                ^
+..\myself\src\client_tcpudp.c(425): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(444): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(540): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(916): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 13 warnings, 1 error
+Target not created
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(425): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(444): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                             uint16_t len;
+..\myself\src\client_tcpudp.c:                                                                      ^
+..\myself\src\client_tcpudp.c(540): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(916): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=58724 RO-data=756 RW-data=524 ZI-data=51148  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 13 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=51148  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(553): error:  #20: identifier "data" is undefined
+..\myself\src\client_tcpudp.c:                                                                  ipaddr_sever[0]=data[10];//取出最高IP位
+..\myself\src\client_tcpudp.c:                                                                                  ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 1 error
+Target not created
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=51148  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=51148  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=52652  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=52652  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 11 Warning(s).
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=52652  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=52652  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 0 Warning(s).
+Build target 'iap_lwip2modbus'
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=52652  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling netconf.c...
+..\myself\src\netconf.c(187): warning:  #223-D: function "tcp_tmr" declared implicitly
+..\myself\src\netconf.c:       tcp_tmr();
+..\myself\src\netconf.c:       ^
+..\myself\src\netconf.c(52): warning:  #177-D: variable "IPaddress" was declared but never referenced
+..\myself\src\netconf.c:   static uint32_t IPaddress = 0;
+..\myself\src\netconf.c:                   ^
+..\myself\src\netconf.c: ..\myself\src\netconf.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\myself\src\stm32f10x_it.c(154): warning:  #1295-D: Deprecated declaration Read_Eth_Packet - give arg types
+..\myself\src\stm32f10x_it.c:     extern void Read_Eth_Packet(); //读取数据包大BUFF中
+..\myself\src\stm32f10x_it.c:                 ^
+..\myself\src\stm32f10x_it.c: ..\myself\src\stm32f10x_it.c: 1 warning, 0 errors
+compiling stm32f107.c...
+..\myself\src\stm32f107.c(69): warning:  #223-D: function "eMBMasterInit" declared implicitly
+..\myself\src\stm32f107.c:               eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\myself\src\stm32f107.c:               ^
+..\myself\src\stm32f107.c(71): warning:  #223-D: function "eMBMasterEnable" declared implicitly
+..\myself\src\stm32f107.c:            eMBMasterEnable();
+..\myself\src\stm32f107.c:            ^
+..\myself\src\stm32f107.c: ..\myself\src\stm32f107.c: 2 warnings, 0 errors
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+compiling DS18B20SROM.c...
+..\myself\src\DS18B20SROM.c(533): warning:  #223-D: function "FS_Writehtml" declared implicitly
+..\myself\src\DS18B20SROM.c:    FS_Writehtml((char*)temp,33);
+..\myself\src\DS18B20SROM.c:    ^
+..\myself\src\DS18B20SROM.c: ..\myself\src\DS18B20SROM.c: 1 warning, 0 errors
+compiling main.c...
+..\myself\src\main.c(102): warning:  #223-D: function "IAP_EndSetFlash" declared implicitly
+..\myself\src\main.c:                    IAP_EndSetFlash();
+..\myself\src\main.c:                    ^
+..\myself\src\main.c(134): warning:  #14-D: extra text after expected end of preprocessing directive
+..\myself\src\main.c:                     #ifdef USED_FILESYSTEM && USED_HTTP
+..\myself\src\main.c:                                            ^
+..\myself\src\main.c(159): warning:  #223-D: function "TcpTestThread" declared implicitly
+..\myself\src\main.c:                             TcpTestThread(LocalTime);
+..\myself\src\main.c:                             ^
+..\myself\src\main.c(167): warning:  #223-D: function "eMBMasterPoll" declared implicitly
+..\myself\src\main.c:                            (void)eMBMasterPoll();//空闲检查 modbus RTU 数据
+..\myself\src\main.c:                                  ^
+..\myself\src\main.c: ..\myself\src\main.c: 4 warnings, 0 errors
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(433): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(547): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+compiling sd_stm32.c...
+compiling smtp.c...
+..\smtp\smtp.c(496): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\smtp\smtp.c:   unsigned int  smtp_Tcp_count[10]=0;
+..\smtp\smtp.c:                                    ^
+..\smtp\smtp.c(505): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("no smtp_session supplied", s != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(690): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(694): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(698): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(702): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(733): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("smtp_send_mail_int: no argument given", arg != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(956): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("target_len is too short", target_len >= len);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1056): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("ipaddr_ntoa returned NULL", ipa != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1058): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", ipa_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1061): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1088): warning:  #177-D: variable "sep" was declared but never referenced
+..\smtp\smtp.c:           char *sep = s->tx_buf + SMTP_KEYWORD_AUTH_LEN;
+..\smtp\smtp.c:                 ^
+..\smtp\smtp.c(1136): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1137): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1152): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1153): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1168): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1185): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1204): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1231): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c: ..\smtp\smtp.c: 20 warnings, 0 errors
+compiling snmp_app.c...
+..\smtp\snmp_app.c(42): warning:  #1-D: last line of file ends without a newline
+..\smtp\snmp_app.c:   #endif                                                                               
+..\smtp\snmp_app.c:                                                                                        ^
+..\smtp\snmp_app.c: ..\smtp\snmp_app.c: 1 warning, 0 errors
+compiling modbus_main.c...
+..\modbus\User\modbus_main.c(71): warning:  #513-D: a value of type "uint8_t *" cannot be assigned to an entity of type "char *"
+..\modbus\User\modbus_main.c:                                                                                    sptr =   &TCP2RS485CMDLIST[0]; //取BUFF地址
+..\modbus\User\modbus_main.c:                                                                                         ^
+..\modbus\User\modbus_main.c(249): warning:  #223-D: function "eMBMasterInit" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(249): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(254): warning:  #223-D: function "eMBMasterEnable" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(254): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(280): warning:  #223-D: function "eMBMasterPoll" declared implicitly
+..\modbus\User\modbus_main.c:                           (void)eMBMasterPoll();
+..\modbus\User\modbus_main.c:                                 ^
+..\modbus\User\modbus_main.c(234): warning:  #550-D: variable "eStatus" was set but never used
+..\modbus\User\modbus_main.c:       eMBErrorCode    eStatus;
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(300): warning:  #223-D: function "vMBMasterGetPDUSndBuf" declared implicitly
+..\modbus\User\modbus_main.c:                     vMBMasterGetPDUSndBuf( &p );   //The 1st  we get the pdu buffer point
+..\modbus\User\modbus_main.c:                     ^
+..\modbus\User\modbus_main.c(309): warning:  #223-D: function "eMBMasterRTUSend" declared implicitly
+..\modbus\User\modbus_main.c:                       eMBMasterRTUSend( Slave_addr, p, len );     //      start up snet status machin and excution sent data on RTU 
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(16): warning:  #177-D: variable "t32" was declared but never referenced
+..\modbus\User\modbus_main.c:             static  uint32_t t32=0;
+..\modbus\User\modbus_main.c:                              ^
+..\modbus\User\modbus_main.c: ..\modbus\User\modbus_main.c: 10 warnings, 0 errors
+compiling flash_if.c...
+compiling tftpserver_iap.c...
+..\iap\src\tftpserver_iap.c(161): warning:  #177-D: variable "message" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char message[20];
+..\iap\src\tftpserver_iap.c:          ^
+..\iap\src\tftpserver_iap.c(304): warning:  #177-D: variable "i" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     uint32_t i;
+..\iap\src\tftpserver_iap.c:              ^
+..\iap\src\tftpserver_iap.c(305): warning:  #177-D: variable "filename" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char filename[20],message[20], *ptr;
+..\iap\src\tftpserver_iap.c:          ^
+..\iap\src\tftpserver_iap.c(305): warning:  #177-D: variable "message" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char filename[20],message[20], *ptr;
+..\iap\src\tftpserver_iap.c:                       ^
+..\iap\src\tftpserver_iap.c(305): warning:  #177-D: variable "ptr" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char filename[20],message[20], *ptr;
+..\iap\src\tftpserver_iap.c:                                     ^
+..\iap\src\tftpserver_iap.c: ..\iap\src\tftpserver_iap.c: 5 warnings, 0 errors
+compiling main_iap.c...
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=52652  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 60 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'iap_lwip2modbus'
+compiling netconf.c...
+..\myself\src\netconf.c(187): warning:  #223-D: function "tcp_tmr" declared implicitly
+..\myself\src\netconf.c:       tcp_tmr();
+..\myself\src\netconf.c:       ^
+..\myself\src\netconf.c(52): warning:  #177-D: variable "IPaddress" was declared but never referenced
+..\myself\src\netconf.c:   static uint32_t IPaddress = 0;
+..\myself\src\netconf.c:                   ^
+..\myself\src\netconf.c: ..\myself\src\netconf.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\myself\src\stm32f10x_it.c(154): warning:  #1295-D: Deprecated declaration Read_Eth_Packet - give arg types
+..\myself\src\stm32f10x_it.c:     extern void Read_Eth_Packet(); //读取数据包大BUFF中
+..\myself\src\stm32f10x_it.c:                 ^
+..\myself\src\stm32f10x_it.c: ..\myself\src\stm32f10x_it.c: 1 warning, 0 errors
+compiling stm32f107.c...
+..\myself\src\stm32f107.c(69): warning:  #223-D: function "eMBMasterInit" declared implicitly
+..\myself\src\stm32f107.c:               eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\myself\src\stm32f107.c:               ^
+..\myself\src\stm32f107.c(71): warning:  #223-D: function "eMBMasterEnable" declared implicitly
+..\myself\src\stm32f107.c:            eMBMasterEnable();
+..\myself\src\stm32f107.c:            ^
+..\myself\src\stm32f107.c: ..\myself\src\stm32f107.c: 2 warnings, 0 errors
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+compiling DS18B20SROM.c...
+..\myself\src\DS18B20SROM.c(533): warning:  #223-D: function "FS_Writehtml" declared implicitly
+..\myself\src\DS18B20SROM.c:    FS_Writehtml((char*)temp,33);
+..\myself\src\DS18B20SROM.c:    ^
+..\myself\src\DS18B20SROM.c: ..\myself\src\DS18B20SROM.c: 1 warning, 0 errors
+compiling main.c...
+..\myself\src\main.c(134): warning:  #14-D: extra text after expected end of preprocessing directive
+..\myself\src\main.c:                     #ifdef USED_FILESYSTEM && USED_HTTP
+..\myself\src\main.c:                                            ^
+..\myself\src\main.c(159): warning:  #223-D: function "TcpTestThread" declared implicitly
+..\myself\src\main.c:                             TcpTestThread(LocalTime);
+..\myself\src\main.c:                             ^
+..\myself\src\main.c(167): warning:  #223-D: function "eMBMasterPoll" declared implicitly
+..\myself\src\main.c:                            (void)eMBMasterPoll();//空闲检查 modbus RTU 数据
+..\myself\src\main.c:                                  ^
+..\myself\src\main.c: ..\myself\src\main.c: 3 warnings, 0 errors
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(433): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(547): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+compiling sd_stm32.c...
+compiling smtp.c...
+..\smtp\smtp.c(496): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\smtp\smtp.c:   unsigned int  smtp_Tcp_count[10]=0;
+..\smtp\smtp.c:                                    ^
+..\smtp\smtp.c(505): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("no smtp_session supplied", s != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(690): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(694): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(698): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(702): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(733): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("smtp_send_mail_int: no argument given", arg != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(956): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("target_len is too short", target_len >= len);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1056): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("ipaddr_ntoa returned NULL", ipa != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1058): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", ipa_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1061): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1088): warning:  #177-D: variable "sep" was declared but never referenced
+..\smtp\smtp.c:           char *sep = s->tx_buf + SMTP_KEYWORD_AUTH_LEN;
+..\smtp\smtp.c:                 ^
+..\smtp\smtp.c(1136): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1137): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1152): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1153): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1168): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1185): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1204): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1231): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c: ..\smtp\smtp.c: 20 warnings, 0 errors
+compiling snmp_app.c...
+..\smtp\snmp_app.c(42): warning:  #1-D: last line of file ends without a newline
+..\smtp\snmp_app.c:   #endif                                                                               
+..\smtp\snmp_app.c:                                                                                        ^
+..\smtp\snmp_app.c: ..\smtp\snmp_app.c: 1 warning, 0 errors
+compiling modbus_main.c...
+..\modbus\User\modbus_main.c(71): warning:  #513-D: a value of type "uint8_t *" cannot be assigned to an entity of type "char *"
+..\modbus\User\modbus_main.c:                                                                                    sptr =   &TCP2RS485CMDLIST[0]; //取BUFF地址
+..\modbus\User\modbus_main.c:                                                                                         ^
+..\modbus\User\modbus_main.c(249): warning:  #223-D: function "eMBMasterInit" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(249): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(254): warning:  #223-D: function "eMBMasterEnable" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(254): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(280): warning:  #223-D: function "eMBMasterPoll" declared implicitly
+..\modbus\User\modbus_main.c:                           (void)eMBMasterPoll();
+..\modbus\User\modbus_main.c:                                 ^
+..\modbus\User\modbus_main.c(234): warning:  #550-D: variable "eStatus" was set but never used
+..\modbus\User\modbus_main.c:       eMBErrorCode    eStatus;
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(300): warning:  #223-D: function "vMBMasterGetPDUSndBuf" declared implicitly
+..\modbus\User\modbus_main.c:                     vMBMasterGetPDUSndBuf( &p );   //The 1st  we get the pdu buffer point
+..\modbus\User\modbus_main.c:                     ^
+..\modbus\User\modbus_main.c(309): warning:  #223-D: function "eMBMasterRTUSend" declared implicitly
+..\modbus\User\modbus_main.c:                       eMBMasterRTUSend( Slave_addr, p, len );     //      start up snet status machin and excution sent data on RTU 
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(16): warning:  #177-D: variable "t32" was declared but never referenced
+..\modbus\User\modbus_main.c:             static  uint32_t t32=0;
+..\modbus\User\modbus_main.c:                              ^
+..\modbus\User\modbus_main.c: ..\modbus\User\modbus_main.c: 10 warnings, 0 errors
+compiling flash_if.c...
+compiling tftpserver_iap.c...
+compiling main_iap.c...
+linking...
+Program Size: Code=57684 RO-data=756 RW-data=496 ZI-data=52648  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 54 Warning(s).
+Build target 'iap_lwip2modbus'
+compiling netconf.c...
+..\myself\src\netconf.c(187): warning:  #223-D: function "tcp_tmr" declared implicitly
+..\myself\src\netconf.c:       tcp_tmr();
+..\myself\src\netconf.c:       ^
+..\myself\src\netconf.c(52): warning:  #177-D: variable "IPaddress" was declared but never referenced
+..\myself\src\netconf.c:   static uint32_t IPaddress = 0;
+..\myself\src\netconf.c:                   ^
+..\myself\src\netconf.c: ..\myself\src\netconf.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\myself\src\stm32f10x_it.c(154): warning:  #1295-D: Deprecated declaration Read_Eth_Packet - give arg types
+..\myself\src\stm32f10x_it.c:     extern void Read_Eth_Packet(); //读取数据包大BUFF中
+..\myself\src\stm32f10x_it.c:                 ^
+..\myself\src\stm32f10x_it.c: ..\myself\src\stm32f10x_it.c: 1 warning, 0 errors
+compiling stm32f107.c...
+..\myself\src\stm32f107.c(69): warning:  #223-D: function "eMBMasterInit" declared implicitly
+..\myself\src\stm32f107.c:               eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\myself\src\stm32f107.c:               ^
+..\myself\src\stm32f107.c(71): warning:  #223-D: function "eMBMasterEnable" declared implicitly
+..\myself\src\stm32f107.c:            eMBMasterEnable();
+..\myself\src\stm32f107.c:            ^
+..\myself\src\stm32f107.c: ..\myself\src\stm32f107.c: 2 warnings, 0 errors
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(131): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[1] = flash_net_buf[2]>>24;//高八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(132): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[2] = flash_net_buf[2]>>16;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(133): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[3] = flash_net_buf[2]>>8;
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(134): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                            iap[4] = flash_net_buf[2]>>0;//低八位
+..\myself\src\client_tcpudp.c:                                                                     ^
+..\myself\src\client_tcpudp.c(152): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                   flash_net_buf[2]=0x55555555;
+..\myself\src\client_tcpudp.c:                                                                   ^
+..\myself\src\client_tcpudp.c(169): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                                  flash_net_buf[2]=0xAAAAAAAA;
+..\myself\src\client_tcpudp.c:                                                                  ^
+..\myself\src\client_tcpudp.c(363): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(541): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[16]=0x24;
+..\myself\src\client_tcpudp.c:                                                    ^
+..\myself\src\client_tcpudp.c(542): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[17]=0x0d;  //efl
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(543): warning:  #175-D: subscript out of range
+..\myself\src\client_tcpudp.c:                                                    UID_STM32[18]=0x0a;
+..\myself\src\client_tcpudp.c:                                                             ^
+..\myself\src\client_tcpudp.c(917): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 11 warnings, 0 errors
+compiling DS18B20SROM.c...
+..\myself\src\DS18B20SROM.c(533): warning:  #223-D: function "FS_Writehtml" declared implicitly
+..\myself\src\DS18B20SROM.c:    FS_Writehtml((char*)temp,33);
+..\myself\src\DS18B20SROM.c:    ^
+..\myself\src\DS18B20SROM.c: ..\myself\src\DS18B20SROM.c: 1 warning, 0 errors
+compiling main.c...
+..\myself\src\main.c(102): warning:  #223-D: function "IAP_EndSetFlash" declared implicitly
+..\myself\src\main.c:                    IAP_EndSetFlash();
+..\myself\src\main.c:                    ^
+..\myself\src\main.c(134): warning:  #14-D: extra text after expected end of preprocessing directive
+..\myself\src\main.c:                     #ifdef USED_FILESYSTEM && USED_HTTP
+..\myself\src\main.c:                                            ^
+..\myself\src\main.c(159): warning:  #223-D: function "TcpTestThread" declared implicitly
+..\myself\src\main.c:                             TcpTestThread(LocalTime);
+..\myself\src\main.c:                             ^
+..\myself\src\main.c(167): warning:  #223-D: function "eMBMasterPoll" declared implicitly
+..\myself\src\main.c:                            (void)eMBMasterPoll();//空闲检查 modbus RTU 数据
+..\myself\src\main.c:                                  ^
+..\myself\src\main.c: ..\myself\src\main.c: 4 warnings, 0 errors
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(433): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(547): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+compiling sd_stm32.c...
+compiling smtp.c...
+..\smtp\smtp.c(496): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\smtp\smtp.c:   unsigned int  smtp_Tcp_count[10]=0;
+..\smtp\smtp.c:                                    ^
+..\smtp\smtp.c(505): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("no smtp_session supplied", s != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(690): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(694): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(698): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(702): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(733): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("smtp_send_mail_int: no argument given", arg != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(956): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("target_len is too short", target_len >= len);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1056): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("ipaddr_ntoa returned NULL", ipa != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1058): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", ipa_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1061): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1088): warning:  #177-D: variable "sep" was declared but never referenced
+..\smtp\smtp.c:           char *sep = s->tx_buf + SMTP_KEYWORD_AUTH_LEN;
+..\smtp\smtp.c:                 ^
+..\smtp\smtp.c(1136): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1137): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1152): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1153): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1168): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1185): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1204): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1231): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c: ..\smtp\smtp.c: 20 warnings, 0 errors
+compiling snmp_app.c...
+..\smtp\snmp_app.c(42): warning:  #1-D: last line of file ends without a newline
+..\smtp\snmp_app.c:   #endif                                                                               
+..\smtp\snmp_app.c:                                                                                        ^
+..\smtp\snmp_app.c: ..\smtp\snmp_app.c: 1 warning, 0 errors
+compiling modbus_main.c...
+..\modbus\User\modbus_main.c(71): warning:  #513-D: a value of type "uint8_t *" cannot be assigned to an entity of type "char *"
+..\modbus\User\modbus_main.c:                                                                                    sptr =   &TCP2RS485CMDLIST[0]; //取BUFF地址
+..\modbus\User\modbus_main.c:                                                                                         ^
+..\modbus\User\modbus_main.c(249): warning:  #223-D: function "eMBMasterInit" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(249): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(254): warning:  #223-D: function "eMBMasterEnable" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(254): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(280): warning:  #223-D: function "eMBMasterPoll" declared implicitly
+..\modbus\User\modbus_main.c:                           (void)eMBMasterPoll();
+..\modbus\User\modbus_main.c:                                 ^
+..\modbus\User\modbus_main.c(234): warning:  #550-D: variable "eStatus" was set but never used
+..\modbus\User\modbus_main.c:       eMBErrorCode    eStatus;
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(300): warning:  #223-D: function "vMBMasterGetPDUSndBuf" declared implicitly
+..\modbus\User\modbus_main.c:                     vMBMasterGetPDUSndBuf( &p );   //The 1st  we get the pdu buffer point
+..\modbus\User\modbus_main.c:                     ^
+..\modbus\User\modbus_main.c(309): warning:  #223-D: function "eMBMasterRTUSend" declared implicitly
+..\modbus\User\modbus_main.c:                       eMBMasterRTUSend( Slave_addr, p, len );     //      start up snet status machin and excution sent data on RTU 
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(16): warning:  #177-D: variable "t32" was declared but never referenced
+..\modbus\User\modbus_main.c:             static  uint32_t t32=0;
+..\modbus\User\modbus_main.c:                              ^
+..\modbus\User\modbus_main.c: ..\modbus\User\modbus_main.c: 10 warnings, 0 errors
+compiling flash_if.c...
+compiling tftpserver_iap.c...
+..\iap\src\tftpserver_iap.c(161): warning:  #177-D: variable "message" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char message[20];
+..\iap\src\tftpserver_iap.c:          ^
+..\iap\src\tftpserver_iap.c(304): warning:  #177-D: variable "i" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     uint32_t i;
+..\iap\src\tftpserver_iap.c:              ^
+..\iap\src\tftpserver_iap.c(305): warning:  #177-D: variable "filename" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char filename[20],message[20], *ptr;
+..\iap\src\tftpserver_iap.c:          ^
+..\iap\src\tftpserver_iap.c(305): warning:  #177-D: variable "message" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char filename[20],message[20], *ptr;
+..\iap\src\tftpserver_iap.c:                       ^
+..\iap\src\tftpserver_iap.c(305): warning:  #177-D: variable "ptr" was declared but never referenced
+..\iap\src\tftpserver_iap.c:     char filename[20],message[20], *ptr;
+..\iap\src\tftpserver_iap.c:                                     ^
+..\iap\src\tftpserver_iap.c: ..\iap\src\tftpserver_iap.c: 5 warnings, 0 errors
+compiling main_iap.c...
+linking...
+Program Size: Code=58732 RO-data=756 RW-data=524 ZI-data=52652  
+FromELF: creating hex file...
+User command #1: fromelf.exe --bin -o "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.bin" "C:\Users\mister-wang\Desktop\TCP2Modbus_v0.6.0\Net2Modbus\Lwip1.4.1+efls ByWang\SDK\obj\lwip_gnu.axf"
+".\obj\lwip_gnu.axf" - 0 Error(s), 60 Warning(s).
+Load "C:\\Users\\mister-wang\\Desktop\\TCP2Modbus_v0.6.0\\Net2Modbus\\Lwip1.4.1+efls ByWang\\SDK\\obj\\lwip_gnu.AXF" 
+
+JLink info:
+-----------
+DLL: V4.86b, compiled Jun 27 2014 20:11:00
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+
+Target info:
+------------
+Device: STM32F107VC
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 64 KB RAM).
+VTarget = 3.293V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
